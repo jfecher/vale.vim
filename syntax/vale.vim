@@ -28,12 +28,12 @@ syn region stringLiteral start="'" end="'"
 
 syn match valeEscapes '\\.'
 
-syn match integerLiteral '\([A-Za-z0-9]\@<!\)[0-9_]\+\([ui]\(8\|16\|32\|64\|sz\)\)\?'
-syn match integerLiteral '\([A-Za-z0-9]\@<!\)0b[01_]\+\([ui]\(8\|16\|32\|64\|sz\)\)\?'
-syn match integerLiteral '\([A-Za-z0-9]\@<!\)0o[0-7_]\+\([ui]\(8\|16\|32\|64\|sz\)\)\?'
-syn match integerLiteral '\([A-Za-z0-9]\@<!\)0x[0-9A-Fa-f_]\+\([ui]\(8\|16\|32\|64\|sz\)\)\?'
+syn match integerLiteral '\([A-Za-z0-9]\@<!\)[0-9_]\+'
+syn match integerLiteral '\([A-Za-z0-9]\@<!\)0b[01_]\+'
+syn match integerLiteral '\([A-Za-z0-9]\@<!\)0o[0-7_]\+'
+syn match integerLiteral '\([A-Za-z0-9]\@<!\)0x[0-9A-Fa-f_]\+'
 
-syn match doubleLiteral '\([A-Za-z0-9]\@<!\)\d\+\.\d*\(f\(16\|32\|64\)\)\?'
+syn match doubleLiteral '\([A-Za-z0-9]\@<!\)\d\+\.\d*'
 
 
 let b:current_syntax = "vale"
