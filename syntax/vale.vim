@@ -12,7 +12,7 @@ syn match valePreproc '#\w*'
 syn match valeModule '\<[A-Z]\w*\.'
 
 syn keyword valeControl as else fn for if imm impl infer-ret inl lock mat mut nad not or ret yon while
-syn keyword valeKeywords abstract destruct drop interface rules sealed struct this virtual weakable exported extern
+syn keyword valeKeywords abstract destruct drop interface rules sealed struct this virtual weakable exported export extern
 
 syn keyword valeType str int bool Array void
 
